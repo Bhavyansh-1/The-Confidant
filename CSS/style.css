@@ -52,23 +52,23 @@ body{
     }
 
   @keyframes animatePBig {
-      0%   {right:0px; top:0px;}
-      100% {right:-60%; top:0px;}
+      0%   {right:0%; top:0%;}
+      100% {right:-80%; top:0%;}
   }
 
   @keyframes animatePSmall {
-      0%   {left:0px; top:0px;}
-      100% {left:-40%; top:0px;}
+      0%   {left:0%; top:0%;}
+      100% {left:-60%; top:0%;}
   }
 
   @keyframes animateGBig {
-      0%   {left:0px; top:0px;}
-      100% {left:-60%; top:0px;}
+      0%   {left:0%; top:0%;}
+      100% {left:-80%; top:0%;}
   }
 
   @keyframes animateGSmall {
-      0%   {right:0px; top:0px;}
-      100% {right:-40%; top:0px;}
+      0%   {right:0%; top:0%;}
+      100% {right:-60%; top:0%;}
   }
 
   #gDiv{
