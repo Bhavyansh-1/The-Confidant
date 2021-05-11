@@ -1,0 +1,335 @@
+body{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  font-family: 'Poppins', sans-serif;
+  }
+ a{
+    padding-top: 0px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+  }
+  #pDivSmall::-webkit-scrollbar-corner{
+    background-color: #ff005c
+
+  }
+  #pDivSmall::-webkit-scrollbar {
+      width: 30px;
+    }
+    /* Track */
+    #pDivSmall::-webkit-scrollbar-track {
+      background-color:#ff005c;
+    }
+
+    /* Handle */
+    #pDivSmall::-webkit-scrollbar-thumb {
+      background: #810034;
+      border: 8px solid #ff005c;
+      border-right: 16px solid #ff005c;
+    }
+
+    #gDivSmall::-webkit-scrollbar {
+      width: 30px;
+    }
+    #gDivSmall::-webkit-scrollbar-corner{
+      background-color: #28df99;
+
+    }
+
+    /* Track */
+    #gDivSmall::-webkit-scrollbar-track {
+      background-color:#28df99;
+    }
+
+    /* Handle */
+    #gDivSmall::-webkit-scrollbar-thumb {
+      background: #1e6f5c;
+      border: 8px solid #28df99;
+      border-right: 16px solid #28df99;
+      height: 10px;
+    }
+
+  @keyframes animatePBig {
+      0%   {right:0px; top:0px;}
+      100% {right:-60%; top:0px;}
+  }
+
+  @keyframes animatePSmall {
+      0%   {left:0px; top:0px;}
+      100% {left:-40%; top:0px;}
+  }
+
+  @keyframes animateGBig {
+      0%   {left:0px; top:0px;}
+      100% {left:-60%; top:0px;}
+  }
+
+  @keyframes animateGSmall {
+      0%   {right:0px; top:0px;}
+      100% {right:-40%; top:0px;}
+  }
+
+  #gDiv{
+      position:relative;
+      height: 100vh;
+      z-index:-1;
+  }
+
+  #gDivBig{
+      position: absolute;
+      width:60%;
+      height:100%;
+      left:0;
+      top:0;
+      background-color:#d0f1c2;
+  }
+
+  .gLogo{
+      position:absolute;
+      top:1%;
+      height:33%;
+      width: 60%;
+      left: 19%;
+  }
+
+  #gDivSmall{
+      position:absolute;
+      width:40%;
+      height:100%;
+      right:0;
+      top:0;
+      background-color:#28df99;
+      transition: width 2s;
+      direction: rtl;
+      overflow: hidden;
+      font-size: 3.5em;
+  }
+
+  #pDiv{
+      position:relative;
+      height:100vh;
+      bottom:100vh;
+  }
+
+  #pDivSmall{
+      position:absolute;
+      width:40%;
+      height:100vh;
+      left:0;
+      top:0;
+      background-color:#ff005c;
+      transition: width 2s;
+      overflow: hidden;
+      color: white;
+      font-size: 9.1vmin;
+  }
+
+  #pDivBig{
+      position:absolute;
+      width:60%;
+      height:100vh;
+      right:0;
+      top:0;
+      background-color:#fddbd9;
+  }
+  .text{
+
+    padding: 1%;
+    position: absolute;
+    left:1%;
+    height:100vh;
+    width:38vw;
+    display:inline-block;
+    transition: margin 2s;
+  }
+  .text1{
+
+    padding: 10px;
+    position: absolute;
+    right:1%;
+    height:100vh;
+    width:38vw;
+    color:white;font-size:5vmin;
+    display:inline-block;
+    transition: margin 2s;
+  }
+  #pDivSmall:hover .text{
+    margin-left: 50px;
+  }
+  #gDivSmall:hover .text1{
+    margin-right: 50px;
+  }
+
+  .pLogo{
+      position:absolute;
+      width: 60%;
+      right:20%;
+  }
+  #pNext{
+    height:6%;
+    width:3%;
+    border-radius: 50%;
+    transform: rotate(180deg);
+    position:absolute;
+    right:1.5%;
+    top:45%;
+    z-index: 5;
+    border: none;
+    transform: translateX(-4%) 1s;
+
+    transition: height 0.3s;
+  }
+  #pNext:hover{
+    height: 7%;
+    width: 3.5%;
+
+  }
+  #pPrevious{
+    height:6%;
+    width:3%;
+    transition: height 0.3s;
+  }
+  #pPrevious:hover{
+    height: 7%;
+    width: 3.5%;
+
+  }
+  #pDivSmall:hover{
+      overflow-y: scroll;
+      width:50%;
+    }
+  #gDivSmall:hover{
+      overflow-y: scroll;
+      width: 50%;
+  }
+
+
+  .container{
+      font-size: 10vmin;
+      font-weight:100;
+      color:#ff005c;
+  }
+
+  .container div{
+      overflow: hidden;
+      position: absolute;
+      left:43%;
+      top:33%;
+      float: right;
+      height:14%;
+      width:55%;
+      padding-top: 2%;
+      margin-top: -1%;
+  }
+
+  .container div li{
+
+      color:#ff005c;
+      font-size: 11vmin;
+      font-weight: 700;
+      padding:0 1%;
+      height:59%;
+      margin-bottom: 10%;
+      display:block;
+  }
+
+  .flip{
+      animation:flip 6s cubic-bezier(.23,0.27,.32,1.2) infinite
+  }
+
+  @keyframes flip{
+      0%{
+          margin-top: -75%;
+      }
+      5%{
+          margin-top: -50%;
+      }
+      33%{
+          margin-top: -50%;
+      }
+      38%{
+          margin-top: -25%;
+      }
+      66%{
+          margin-top: -25%;
+      }
+      71%{
+          margin-top: 0%;
+      }
+      99.99%{
+          margin-top: 0%;
+      }
+      100%{
+          margin-top: -75%;
+      }
+  }
+  .h3
+  {
+    position: absolute;
+    font-size:5.5vmin;
+    top:31%;
+    left: 20%;
+    color: #ff005c;
+  }
+
+.pBtn {
+  position: absolute;
+  left: 30%;
+  margin-bottom: 4%;
+  height: 30%;
+  width: 40%;
+  background:    #810034;
+color:         #ffffff;
+border: none;
+display:       inline-block;
+font:          normal bold 3vmin/1 'Poppins', sans-serif;
+text-align:    center;
+opacity: 0.8;
+transition: width 0.5s, height 0.5s;
+}
+
+.pBtn:hover {
+  background: #ff005c;
+  opacity: 1;
+  width: 45%;
+  height: 33%;
+}
+#problem{
+
+  color: black;
+  font-weight: 600;
+  font-size: 4.5vmin;
+  padding-left: 5%;
+}
+.xuop
+{
+  position:absolute;
+  height:340px;
+  top:35%;
+  left:5%;
+  transition: height 1s;
+}
+.xuop:hover{
+  height:340px;
+}
+.gBtn {
+  height: 10%;
+  width: 25%;
+  background:    #1e6f5c;
+color:         #ffffff;
+border: none;
+display:       inline-block;
+font:          normal bold 3vmin/1 'Poppins', sans-serif;
+text-align:    center;
+opacity: 0.8;
+transition: width 0.5s, height 0.5s;
+}
+.gBtn:hover {
+  background: #28df99;
+  font-size: 3.1vmin;
+  opacity: 1;
+  width: 27%;
+  height: 12%;
+}

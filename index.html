@@ -1,0 +1,191 @@
+<html>
+<head>
+  <title>The Confidant</title>
+  <link rel="shortcut icon" href="CSS\favicon.ico">
+    <link rel="stylesheet" href="CSS\style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script&family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+<script type="text/javascript">
+var i = 0;
+var txt = 'Are you feeling lonely ? ` Is everything happening around leaving your heart wretched ? ` Is this pandemic too much to take ? ` Have you lost some dear one and have unsaid things ? ` Is life in general becoming too overwhelming these days ?`#';
+var speed = 40;
+
+function ptypeWriter() {
+  if(txt.charAt(i)=='#')
+  {
+    i=0;
+    ptypeWriter();
+  }
+
+else if (i < txt.length) {
+  if(txt.charAt(i)=='`')
+  {
+  setTimeout(function(){
+  document.getElementById("problem").innerHTML = "";
+  i++;
+  ptypeWriter();
+  },1500);
+}
+ else{
+ document.getElementById("problem").innerHTML += txt.charAt(i);
+ i++;
+ setTimeout(ptypeWriter, speed);
+}
+}
+}
+var j=0;
+var tht = 'Our anxiety does not come From thinkhing about the future^but from wanting to control it ` Depression is not RESILIENCE^You are allowed To feel Messed up Inside out^it Doesn\'t mean you are DEFECTIVE^You are just HUMAN ` No darkness lasts forever and even in it, there are stars ` H . O . P . E^^Hold^On^Pain^Ends ` Success is not final^Failure is not fatal^it is the courage to continue that counts`#';
+function gtypeWriter() {
+if (j < tht.length) {
+  if(tht.charAt(j)=='#')
+  {
+    j=0;
+    gtypeWriter();
+  }
+  else if(tht.charAt(j)=='`')
+  {
+  setTimeout(function(){
+  document.getElementById("thought").innerHTML = "";
+  j++;
+  gtypeWriter();
+  },3200);
+}
+else if(tht.charAt(j)=='^')
+  {
+  setTimeout(function(){
+  document.getElementById("thought").innerHTML += "<br>";
+  j++;
+  gtypeWriter();
+},50);
+}
+ else{
+ document.getElementById("thought").innerHTML += tht.charAt(j);
+ j++;
+ setTimeout(gtypeWriter, 30);}
+}
+}
+
+
+  </script>
+</head>
+<body onload="ptypeWriter();gtypeWriter();">
+
+
+<div id="gDiv">
+
+<div id="gDivBig">
+<br>
+    <img src="CSS\green_logo.gif" class="gLogo">
+    <div style="position :absolute;height:4%;width:52%;top:0%;padding: 1%;left:22%;background:#1e6f5c;">
+      <h2 style="margin:0%;color:white;font-size:3.7vmin;text-align:center;">We are available from 6 PM to 2 AM </h2>
+    </div>
+    <iframe style="position:absolute;top:30%;left:9%;"src="https://www.instagram.com/p/COPPu1HpAQB/embed" width="37%" height="100%" frameborder="50" scrolling="no" allowtransparency="true"></iframe>
+    <a href="https://discord.gg/J6DWe7CTbu" class="gBtn" style="position:absolute;top:55%;left:55%;" ><p>Talk To Confidant</p></a>
+    <a href="https://discord.gg/REMBcQBKFB" class="gBtn" style="position:absolute;top:70%;left:55%;" ><p>Chat With Confidant</p></a>
+
+
+</div>
+
+<div id="gDivSmall" >
+  <div class="text1">
+    <p>
+        <img src="CSS\dq1.png" style="position:absolute;left: 2%;width:15%;display:inline-block">
+        <img src="CSS\dq1.png" style="position:absolute;right:2%;width:15%;display:inline-block;transform: rotate(180deg);">
+        <br>
+        <p id="thought" style="color:black;font-weight:900; padding-right: 5%;font-size: 1.4em;"></p>
+<br><br>
+    </p>
+  </div>
+</div>
+
+</div>
+
+
+<div id="pDiv">
+
+<div id="pDivBig">
+    <img src="CSS\tc.PNG" alt="BM"  style="position: absolute;bottom:3%;left: 50%;height:50vmin;">
+    <img src="CSS\pink_logo.png" height=20% class="pLogo">
+    <h2 class="h3">Wave to us:</h2>
+    <h4 class="container">
+       <span></span>
+       <div>
+           <ul class="flip">
+               <li style="font-weight:500;">வணக்கம்</li>
+               <li style="font-weight:700;">नमस्ते</li>
+               <li>Hello</li>
+           </ul>
+       </div>
+   </h4>
+   <div style="position: absolute;bottom: 4%;left: 12%;width: 40%;height:20%">
+    <center>
+       <button class="pBtn" >INITIATIVE</button>
+       <button class="pBtn" style="top:40%">DEVELOPERS</button><br><br>
+
+    </center>
+   </div>
+
+</div>
+
+<div id="pDivSmall">
+  <div class="text">
+        <img src="CSS\dq.png" style="width:15%;display:inline-block">
+        <img src="CSS\dq.png" style="position:absolute;right:3%;width:15%;display:inline-block;transform: rotate(180deg);">
+        <p style="font-weight: bolder; padding-left: 5%;">Well it’ll be all good, You have reached your safe space.</p>
+        <p id="problem"></p>
+  </div>
+</div>
+
+</div>
+
+
+<img src="CSS\a1.jpeg" id="pNext"
+
+onclick="
+
+var x=document.getElementById('gDivBig');
+x.style.animation='';
+x.style.left=0;
+var y=document.getElementById('gDivSmall');
+y.style.animation='';
+y.style.right=0;
+document.getElementById('pNext').style.display='none';
+document.getElementById('pDivBig').style.animation='animatePBig 0.9s forwards';
+setTimeout(function() {
+    document.getElementById('pDivSmall').style.animation='animatePSmall 0.7s forwards';
+}, 200);
+setTimeout(function() {
+    document.getElementById('pPrevious').style.display='block';
+    document.getElementById('gDiv').style.zIndex=1;
+    document.getElementById('pDiv').style.zIndex=-1;
+
+
+}, 900);">
+
+<img src="CSS\a2.jpeg"
+style="border-radius: 50%;position:fixed;left:20px;top:45%;display:none;z-index: 5;border: none;padding: 0;"
+onclick="
+var x=document.getElementById('pDivBig');
+x.style.animation='';
+x.style.right=0;
+var y=document.getElementById('pDivSmall');
+y.style.animation='';
+y.style.left=0;
+document.getElementById('pPrevious').style.display='none';
+document.getElementById('gDivBig').style.animation='animateGBig 0.9s forwards';
+setTimeout(function() {
+    document.getElementById('gDivSmall').style.animation='animateGSmall 0.7s forwards';
+}, 200);
+setTimeout(function() {
+    document.getElementById('pNext').style.display='block';
+}, 900);
+setTimeout(function() {
+    document.getElementById('gDiv').style.zIndex=-1;
+    document.getElementById('pDiv').style.zIndex=1;
+}, 900);"
+id="pPrevious">
+
+</body>
+</html>
