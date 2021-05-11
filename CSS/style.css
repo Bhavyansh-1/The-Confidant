@@ -53,7 +53,7 @@ body{
 
   @keyframes animatePBig {
       0%   {right:0%; top:0%;}
-      100% {right:-80%; top:0%;}
+    100% {right:-100%;top:0%;}
   }
 
   @keyframes animatePSmall {
@@ -63,7 +63,7 @@ body{
 
   @keyframes animateGBig {
       0%   {left:0%; top:0%;}
-      100% {left:-80%; top:0%;}
+    100% {left:-100%;top:0%;}
   }
 
   @keyframes animateGSmall {
