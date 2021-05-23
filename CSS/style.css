@@ -4,6 +4,16 @@ body{
   overflow:hidden;
   font-family: 'Poppins', sans-serif;
   }
+.yuy{
+display: none;
+}
+.ig{
+  position:absolute;
+  top:30%;
+  left:9%;
+  width:37%;
+  height:100%;
+}
  a{
     padding-top: 0px;
     font-size: 15px;
@@ -300,6 +310,8 @@ transition: width 0.5s, height 0.5s;
 #problem{
 
   color: black;
+  position: absolute;
+  top:90%;
   font-weight: 600;
   font-size: 4.5vmin;
   padding-left: 5%;
@@ -326,6 +338,24 @@ font:          normal bold 3vmin/1 'Poppins', sans-serif;
 text-align:    center;
 opacity: 0.8;
 transition: width 0.5s, height 0.5s;
+position:absolute;
+top:55%;
+left:55%;
+}
+.gBtn1 {
+  height: 10%;
+  width: 25%;
+  background:    #1e6f5c;
+color:         #ffffff;
+border: none;
+display:       inline-block;
+font:          normal bold 3vmin/1 'Poppins', sans-serif;
+text-align:    center;
+opacity: 0.8;
+transition: width 0.5s, height 0.5s;
+position:absolute;
+top:70%;
+left:55%;
 }
 .gBtn:hover {
   background: #28df99;
@@ -333,6 +363,29 @@ transition: width 0.5s, height 0.5s;
   opacity: 1;
   width: 27%;
   height: 12%;
+}
+.gBtn1:hover{
+  background: #28df99;
+  font-size: 3.1vmin;
+  opacity: 1;
+  width: 27%;
+  height: 12%;
+
+}
+.mobile{
+  display:none;
+}
+.desktop{
+  position: absolute;
+  left:15%;
+  transform: rotate(0.5deg);
+}
+.lock{
+    opacity: 0;
+}
+#problem{
+  position: absolute;
+  top:70%;
 }
 @media only screen and (max-device-width:480px) {
   body{
@@ -371,10 +424,11 @@ transition: width 0.5s, height 0.5s;
     position: absolute;
     top:190vh;
     width: 130vw;
-    height:60vh;
+    height:70vh;
     left:0%;
     z-index: 1;
   }
+
   #pNext{
     display: none;
   }
@@ -405,8 +459,74 @@ transition: width 0.5s, height 0.5s;
     position: absolute;
     left:1%;
     height:40vh;
-    width:125vw;
+    width:90vw;
+    font-weight: 1000;
     display:inline-block;
     transition: margin 2s;
+    z-index:2;
   }
+  .yuy{
+    display: flex;
+    text-align: center;
+    position:absolute;top:240vh;background-color:#21094e;color:white;width:130vw;height:15vh;
+  }
+    .ig{
+      position:absolute;
+      top:30%;
+      left:7%;
+      height: 50%;
+      width:45%;
+    }
+    .gBtn {
+      height: 10%;
+      width: 25%;
+      background:    #1e6f5c;
+    color:         #ffffff;
+    border: none;
+    display:       inline-block;
+    font:          normal bold 3vmin/1 'Poppins', sans-serif;
+    text-align:    center;
+    opacity: 0.8;
+    transition: width 0.5s, height 0.5s;
+    position:absolute;
+    top:40%;
+    left:60%;
+    }
+    .gBtn1 {
+      height: 10%;
+      width: 25%;
+      background:    #1e6f5c;
+    color:         #ffffff;
+    border: none;
+    display:       inline-block;
+    font:          normal bold 3vmin/1 'Poppins', sans-serif;
+    text-align:    center;
+    opacity: 0.8;
+    transition: width 0.5s, height 0.5s;
+    position:absolute;
+    top:55%;
+    left:60%;
+    }
+    .desktop{
+      display: none;
+    }
+    .mobile{
+      display:inline-block;
+      position: absolute;
+      left: 4%;
+      height:30%;
+      transform: rotate(0.5deg);
+    }
+    .lock{
+      display:flex;
+      position:absolute;
+      top:35%;
+      left:0%;
+      z-index:-1;
+      opacity:0.6;
+    }
+    #problem{
+      top:90%;
+    }
+
 }
