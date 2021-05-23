@@ -52,28 +52,28 @@ body{
     }
 
   @keyframes animatePBig {
-      0%   {right:0%; top:0%;}
-    100% {right:-100%;top:0%;}
+      0%   {right:0px; top:0px;}
+      100% {right:-80%; top:0px;}
   }
 
   @keyframes animatePSmall {
-      0%   {left:0%; top:0%;}
-      100% {left:-60%; top:0%;}
+      0%   {left:0px; top:0px;}
+      100% {left:-60%; top:0px;}
   }
 
   @keyframes animateGBig {
-      0%   {left:0%; top:0%;}
-    100% {left:-100%;top:0%;}
+      0%   {left:0px; top:0px;}
+      100% {left:-80%; top:0px;}
   }
 
   @keyframes animateGSmall {
-      0%   {right:0%; top:0%;}
-      100% {right:-60%; top:0%;}
+      0%   {right:0px; top:0px;}
+      100% {right:-60%; top:0px;}
   }
 
   #gDiv{
       position:relative;
-      height: 100vh;
+      height: 100%;
       z-index:-1;
   }
 
@@ -108,9 +108,10 @@ body{
   }
 
   #pDiv{
-      position:relative;
+      position:absolute;
       height:100vh;
-      bottom:100vh;
+      width: 100vw;
+      top:0%;
   }
 
   #pDivSmall{
@@ -139,7 +140,7 @@ body{
     padding: 1%;
     position: absolute;
     left:1%;
-    height:100vh;
+    height:100%;
     width:38vw;
     display:inline-block;
     transition: margin 2s;
@@ -332,4 +333,80 @@ transition: width 0.5s, height 0.5s;
   opacity: 1;
   width: 27%;
   height: 12%;
+}
+@media only screen and (max-device-width:480px) {
+  body{
+    margin: 0px;
+    overflow: scroll;
+  }
+  #pDiv{
+
+    height: 100vh;
+    width: 100vw;
+  }
+  #pDivBig{
+    position: absolute;
+    width:130vw;
+    height:70vh;
+    left:0%;
+    z-index: 1;
+  }
+  #pDivSmall
+  {
+    position: absolute;
+    top:70vh;
+    width: 130vw;
+    height:50vh;
+    z-index: 1;
+  }
+  #gDivBig{
+    position: absolute;
+    top: 120vh;
+    width:130vw;
+    height:75vh;
+    z-index: 1;
+  }
+  #gDivSmall
+  {
+    position: absolute;
+    top:190vh;
+    width: 130vw;
+    height:60vh;
+    left:0%;
+    z-index: 1;
+  }
+  #pNext{
+    display: none;
+  }
+  #gNext{
+    display: none;
+  }
+  #pDivSmall:hover{
+    width:130vw;
+
+  }
+  #gDivSmall:hover{
+    width:130vw;
+
+  }
+  .text{
+
+    padding: 1%;
+    position: absolute;
+    left:1%;
+    height:40vh;
+    width:130vw;
+    display:inline-block;
+    transition: margin 2s;
+  }
+  .text1{
+
+    padding: 1%;
+    position: absolute;
+    left:1%;
+    height:40vh;
+    width:125vw;
+    display:inline-block;
+    transition: margin 2s;
+  }
 }
