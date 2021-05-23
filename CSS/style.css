@@ -389,7 +389,7 @@ left:55%;
 }
 #problem{
   position: absolute;
-  top:70%;
+  top:75vh;
 }
 @media only screen and (max-device-width:480px) {
   body{
