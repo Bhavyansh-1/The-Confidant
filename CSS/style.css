@@ -532,5 +532,8 @@ left:55%;
     #problem{
       top:90%;
     }
+  h1{
+    margin-block-start:0.5em;
+  }
 
 }
