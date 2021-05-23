@@ -1,0 +1,105 @@
+body{
+  margin:0;
+  font-family: 'KoHo', sans-serif;
+}
+p{
+  font-weight: 800;
+}
+.top
+{
+  position:absolute;
+  height:7vh;
+  width:100vw;
+
+  background-color: #1081af;
+}
+.mid
+{position: absolute;
+  top:7vh;
+  height:41vh;
+  width: 100vw;
+  background-color: #0b5876;
+  padding-top: 4%;
+  color: white;
+  text-align: center;
+}
+.content
+{
+  position: absolute;
+  height: 50vh;
+  top:52vh;
+  width:100vw;
+  text-align: center;
+  background-color: #d1d9d9;
+}
+hr{
+  border: dotted 6px;
+  border-bottom: none;
+  width: 7%;
+  z-index: 100;
+
+}
+.text{
+  position :absolute;
+  padding-top: 2%;
+  height:40vh;
+  width: 50vw;
+  top:5%;
+  left:25%;
+
+}
+.mid2
+{position: absolute;
+  top:101vh;
+  height:42vh;
+  width: 100vw;
+  background-color: #0b5876;
+  padding-top: 4%;
+  color: white;
+  text-align: center;
+}
+.content2
+{
+  position: absolute;
+  height: 50vh;
+  top:143vh;
+  width:100vw;
+  text-align: center;
+  background-color: #d1d9d9;
+}
+.mid3
+{position: absolute;
+  top:193vh;
+  height:42vh;
+  width: 100vw;
+  background-color: #0b5876;
+  padding-top: 4%;
+  color: white;
+  text-align: center;
+}
+.content3
+{
+  position: absolute;
+  height: 50vh;
+  top:235vh;
+  width:100vw;
+  text-align: center;
+  background-color: #d1d9d9;
+}
+html{
+  scroll-behavior: smooth;
+}
+button{
+  color: #0b5876;
+  border-color: #0b5876;
+  
+}
+button:hover{
+  background-color: #0b5876;
+  color: white;
+
+}
+.xx:hover{
+  color:#62d5f8;
+
+}
