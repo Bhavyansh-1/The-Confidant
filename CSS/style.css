@@ -7,6 +7,10 @@ body{
 .yuy{
 display: none;
 }
+h1{
+  margin-block-start:0em;
+  margin-block-end:0em;
+}
 .ig{
   position:absolute;
   top:30%;
