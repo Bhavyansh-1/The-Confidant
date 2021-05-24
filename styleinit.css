@@ -29,6 +29,7 @@ p{
   color: white;
   text-align: center;
 }
+
 .content
 {
   position: absolute;
@@ -85,7 +86,7 @@ hr{
 }
 .content3
 {
-  
+
   position: absolute;
   height: 50vh;
   top:232vh;
