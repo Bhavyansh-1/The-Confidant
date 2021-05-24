@@ -2,7 +2,13 @@ body{
   margin:0;
   font-family: 'KoHo', sans-serif;
 }
+h3{
+  margin-block-start: 1%;
+margin-block-end:0em;
+font-size: 3vmin;
+}
 p{
+  font-size: 2.8vmin;
   font-weight: 800;
 }
 .top
@@ -26,8 +32,8 @@ p{
 .content
 {
   position: absolute;
-  height: 50vh;
-  top:52vh;
+  height: 54vh;
+  top:48vh;
   width:100vw;
   text-align: center;
   background-color: #d1d9d9;
@@ -50,7 +56,7 @@ hr{
 }
 .mid2
 {position: absolute;
-  top:101vh;
+  top:102vh;
   height:42vh;
   width: 100vw;
   background-color: #0b5876;
@@ -62,14 +68,14 @@ hr{
 {
   position: absolute;
   height: 50vh;
-  top:143vh;
+  top:140vh;
   width:100vw;
   text-align: center;
   background-color: #d1d9d9;
 }
 .mid3
 {position: absolute;
-  top:193vh;
+  top:190vh;
   height:42vh;
   width: 100vw;
   background-color: #0b5876;
@@ -79,9 +85,10 @@ hr{
 }
 .content3
 {
+  
   position: absolute;
   height: 50vh;
-  top:235vh;
+  top:232vh;
   width:100vw;
   text-align: center;
   background-color: #d1d9d9;
@@ -90,9 +97,13 @@ html{
   scroll-behavior: smooth;
 }
 button{
+  width:auto;
+  height:auto;
+  position:relative;
+  margin-top:2%;
   color: #0b5876;
   border-color: #0b5876;
-  
+
 }
 button:hover{
   background-color: #0b5876;
@@ -102,4 +113,63 @@ button:hover{
 .xx:hover{
   color:#62d5f8;
 
+}
+.footer{
+  position: absolute;
+  top:282vh;
+  height:12vh;
+  width: 100vw;
+  background-color: #d1d9d9;
+  z-index:-1;
+
+}
+
+
+@media only screen and (max-device-width:480px){
+  .top{
+    height: 4vh;
+  }
+  .mid{
+    top:4vh;
+    height:18vh;
+  }
+  .content{
+    top:22vh;
+    height: 50vh;
+  }
+  .mid2{
+    top:72vh;
+    height:18vh;
+  }
+  .content2{
+    top:90vh;
+    height: 45vh;
+  }
+  .mid3{
+    top:135vh;
+    height:20vh;
+  }
+  .content3{
+    top:150vh;
+    height: 30vh;
+  }
+  .footer{
+    display: flex;
+    position: absolute;
+    top:180vh;
+    height:12vh;
+    width: 100vw;
+    background-color: #d1d9d9;
+  }
+  button{
+    height:8%;
+    width: 45%;
+  }
+  .text{
+    top:1%;
+  }
+  button{
+    height:9%;
+    width: 45%;
+  }
 }
