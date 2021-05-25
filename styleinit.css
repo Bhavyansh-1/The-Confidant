@@ -10,6 +10,7 @@ font-size: 3vmin;
 p{
   font-size: 2.8vmin;
   font-weight: 800;
+  color:#810034;
 }
 .top
 {
@@ -17,14 +18,14 @@ p{
   height:7vh;
   width:100vw;
 
-  background-color: #1081af;
+  background-color: #810034;
 }
 .mid
 {position: absolute;
   top:7vh;
   height:41vh;
   width: 100vw;
-  background-color: #0b5876;
+  background-color: #ff005c;
   padding-top: 4%;
   color: white;
   text-align: center;
@@ -37,7 +38,7 @@ p{
   top:48vh;
   width:100vw;
   text-align: center;
-  background-color: #d1d9d9;
+  background-color: #fddbd9;
 }
 hr{
   border: dotted 6px;
@@ -60,7 +61,7 @@ hr{
   top:102vh;
   height:42vh;
   width: 100vw;
-  background-color: #0b5876;
+  background-color: #ff005c;
   padding-top: 4%;
   color: white;
   text-align: center;
@@ -72,14 +73,14 @@ hr{
   top:140vh;
   width:100vw;
   text-align: center;
-  background-color: #d1d9d9;
+  background-color: #fddbd9;
 }
 .mid3
 {position: absolute;
   top:190vh;
   height:42vh;
   width: 100vw;
-  background-color: #0b5876;
+  background-color: #ff005c;
   padding-top: 4%;
   color: white;
   text-align: center;
@@ -92,24 +93,25 @@ hr{
   top:232vh;
   width:100vw;
   text-align: center;
-  background-color: #d1d9d9;
+  background-color: #fddbd9;
 }
 html{
   scroll-behavior: smooth;
 }
 button{
   width:auto;
-  height:auto;
+  height:6vh;
   position:relative;
   margin-top:2%;
-  color: #0b5876;
-  border-color: #0b5876;
-
+  color: #ff005c;
+  border-color: #ff005c;
+ margin-top:4%;
+ font-size:100%;
+ color: #ff005c;
 }
 button:hover{
-  background-color: #0b5876;
+  background-color: #ff005c;
   color: white;
-
 }
 .xx:hover{
   color:#62d5f8;
@@ -120,7 +122,7 @@ button:hover{
   top:282vh;
   height:12vh;
   width: 100vw;
-  background-color: #d1d9d9;
+  background-color: #fddbd9;
   z-index:-1;
 
 }
@@ -160,7 +162,7 @@ button:hover{
     top:180vh;
     height:12vh;
     width: 100vw;
-    background-color: #d1d9d9;
+    background-color: #fddbd9;
   }
   button{
     height:8%;
