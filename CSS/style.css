@@ -16,7 +16,7 @@ h1{
   top:30%;
   left:9%;
   width:37%;
-  height:100%;
+  height:60%;
 }
  a{
     padding-top: 0px;
@@ -140,7 +140,7 @@ h1{
       color: white;
       font-size: 9.1vmin;
   }
-span{
+.span1{
   animation: blink 1.5s linear infinite;
 }
   #pDivBig{
@@ -221,65 +221,65 @@ span{
       overflow-y: scroll;
       width: 50%;
   }
+  .pnew{
+    position:absolute;top:27vh;
+    right:26vw;
+    font-size:5vmin;
+    color:#ff005c;
 
-
-  .container{
-      font-size: 10vmin;
-      font-weight:100;
-      color:#ff005c;
   }
 
-  .container div{
+  .wrapper{
+    position: absolute;
+    top:24vh;
+    left:36vw;
+      box-sizing: content-box;
+      background-color: #fddbd9;
+      height: 13%;
+      padding: 2% 4%;
+      display: flex;
+      border-radius: 8px;
+      box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+      z-index: 0;
+  }
+  .words{
       overflow: hidden;
-      position: absolute;
-      left:45%;
-      top:33%;
-      float: right;
-      height:14%;
-      width:55%;
-      padding-top: 2%;
-      margin-top: -1%;
   }
-
-  .container div li{
+  span{
+      display: block;
+      height: 100%;
+      padding-left: 1%;
+      font-weight:500;
 
       color:#ff005c;
+      animation: spin_words 6s infinite;
+      font-weight: 500;
       font-size: 11vmin;
-      font-weight: 700;
-      padding:0 1%;
-      height:59%;
-      margin-bottom: 10%;
-      display:block;
   }
-
-  .flip{
-      animation:flip 6s cubic-bezier(.23,0.27,.32,1.2) infinite
-  }
-
-  @keyframes flip{
-      0%{
-          margin-top: -75%;
+  @keyframes spin_words{
+      10%{
+          transform: translateY(-112%);
       }
-      5%{
-          margin-top: -50%;
+      25%{
+          transform: translateY(-100%);
       }
-      33%{
-          margin-top: -50%;
+      35%{
+          transform: translateY(-212%);
       }
-      38%{
-          margin-top: -25%;
+      50%{
+          transform: translateY(-200%);
       }
-      66%{
-          margin-top: -25%;
+      60%{
+          transform: translateY(-312%);
       }
-      71%{
-          margin-top: 0%;
+      75%{
+          transform: translateY(-300%);
       }
-      99.99%{
-          margin-top: 0%;
+      85%{
+          transform: translateY(-412%);
       }
       100%{
-          margin-top: -75%;
+          transform: translateY(-400%);
       }
   }
   .h3
@@ -296,7 +296,8 @@ span{
   left: 30%;
   margin-bottom: 4%;
   height: 30%;
-  width: 40%;
+  min-width: 45%;
+  width: auto;
   background:    #810034;
 color:         #ffffff;
 border: none;
@@ -316,11 +317,13 @@ transition: width 0.5s, height 0.5s;
 #problem{
 
   color: black;
-  position: absolute;
-  top:90%;
+
   font-weight: 600;
   font-size: 4.5vmin;
   padding-left: 5%;
+}
+.door{
+  position: absolute;bottom:3%;left: 50%;height:50vmin;
 }
 .xuop
 {
@@ -396,11 +399,24 @@ left:55%;
 75%{opacity: 0.75;}
 100%{opacity: 1;}
 }
-#problem{
-  position: absolute;
-  top:75vh;
+.land{
+  display: none;
+  z-index:-1;
 }
-@media only screen and (max-device-width:780px) {
+
+@media only screen and (max-device-width:1024px) {
+   .wrapper{
+     top: 18vh;
+left: 56vw;
+height: 14%;
+   }
+  .pnew{
+    position: absolute;
+    top: 20vh;
+    right: 95vw;
+    font-size: 5vmin;
+    color: #ff005c;
+  }
   body{
     margin: 0px;
     overflow: scroll;
@@ -494,7 +510,7 @@ left:55%;
   .yuy{
     display: flex;
     text-align: center;
-    position:absolute;top:240vh;background-color:#21094e;color:white;width:150%;height:20vh;
+    position:absolute;top:245vh;background-color:#21094e;color:white;width:150%;height:20vh;
   }
     .ig{
       position:absolute;
@@ -557,10 +573,14 @@ left:55%;
       opacity:0.6;
     }
     #problem{
-      top:35vh;
+        position: relative;
+      top:0vh;
     }
     .fuckyou{
       display:none;
+    }
+    .door{
+      left:50%;
     }
 
   h1{
@@ -568,3 +588,24 @@ left:55%;
   }
 
 }
+@media screen and (max-device-width:1024px) and (orientation:landscape) {
+  #pDivBig{
+    display: none;
+  }
+  #pDivSmall{
+    display: none;
+  }
+  #gDivBig{
+    display: none;
+  }
+  #gDivSmall{
+    display: none;
+  }
+  .yuy{
+    display:none;
+  }
+  .land{
+    margin-left: 15%;
+    display: flex;
+  }
+ }
