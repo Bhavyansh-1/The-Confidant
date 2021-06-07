@@ -1,0 +1,178 @@
+body{
+  margin:0;
+  font-family: 'KoHo', sans-serif;
+}
+h3{
+  margin-block-start: 1%;
+margin-block-end:0em;
+font-size: 3vmin;
+}
+p{
+  font-size: 2.8vmin;
+  font-weight: 800;
+  color:#810034;
+}
+.top
+{
+  position:absolute;
+  height:7vh;
+  width:100vw;
+
+  background-color: #810034;
+}
+.mid
+{position: absolute;
+  top:7vh;
+  height:41vh;
+  width: 100vw;
+  background-color: #ff005c;
+  padding-top: 4%;
+  color: white;
+  text-align: center;
+}
+
+.content
+{
+  position: absolute;
+  height: 54vh;
+  top:48vh;
+  width:100vw;
+  text-align: center;
+  background-color: #fddbd9;
+}
+hr{
+  border: dotted 6px;
+  border-bottom: none;
+  width: 7%;
+  z-index: 100;
+
+}
+.text{
+  position :absolute;
+  padding-top: 2%;
+  height:40vh;
+  width: 50vw;
+  top:5%;
+  left:25%;
+
+}
+.mid2
+{position: absolute;
+  top:102vh;
+  height:42vh;
+  width: 100vw;
+  background-color: #ff005c;
+  padding-top: 4%;
+  color: white;
+  text-align: center;
+}
+.content2
+{
+  position: absolute;
+  height: 50vh;
+  top:140vh;
+  width:100vw;
+  text-align: center;
+  background-color: #fddbd9;
+}
+.mid3
+{position: absolute;
+  top:190vh;
+  height:42vh;
+  width: 100vw;
+  background-color: #ff005c;
+  padding-top: 4%;
+  color: white;
+  text-align: center;
+}
+.content3
+{
+
+  position: absolute;
+  height: 50vh;
+  top:232vh;
+  width:100vw;
+  text-align: center;
+  background-color: #fddbd9;
+}
+html{
+  scroll-behavior: smooth;
+}
+button{
+  width:auto;
+  height:6vh;
+  position:relative;
+  margin-top:2%;
+  color: #ff005c;
+  border-color: #ff005c;
+ margin-top:4%;
+ font-size:100%;
+ color: #ff005c;
+}
+button:hover{
+  background-color: #ff005c;
+  color: white;
+}
+.xx:hover{
+  color:#62d5f8;
+
+}
+.footer{
+  position: absolute;
+  top:282vh;
+  height:12vh;
+  width: 100vw;
+  background-color: #fddbd9;
+  z-index:-1;
+
+}
+
+
+@media only screen and (max-device-width:480px){
+  .top{
+    height: 4vh;
+  }
+  .mid{
+    top:4vh;
+    height:18vh;
+  }
+  .content{
+    top:22vh;
+    height: 50vh;
+  }
+  .mid2{
+    top:72vh;
+    height:18vh;
+  }
+  .content2{
+    top:90vh;
+    height: 45vh;
+  }
+  .mid3{
+    top:135vh;
+    height:20vh;
+  }
+  .content3{
+    top:150vh;
+    height: 30vh;
+  }
+  .footer{
+    display: flex;
+    position: absolute;
+    top:180vh;
+    height:12vh;
+    width: 100vw;
+    background-color: #fddbd9;
+  }
+  button{
+    height:8%;
+    width: 45%;
+  }
+  .text{
+    top:1%;
+  }
+  button{
+    height:9%;
+    width: 45%;
+  }
+}
