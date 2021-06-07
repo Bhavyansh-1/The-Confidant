@@ -676,6 +676,9 @@ height: 14%;
     background-color: black;
     display: none;
 }
+#pPrevious{
+  z-index:-7;
+  }
 @keyframes animatetop {
 from {top: -40vh; opacity: 0}
 to {top:45vh;; opacity: 1}
